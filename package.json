@@ -1,0 +1,15 @@
+{
+  "name": "cool-image-api",
+  "version": "1.0.0",
+  "description": "The official api wrapper for https://api.cool-img-api.ml/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo no"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "sync-fetch": "^0.3.0"
+  }
+}
