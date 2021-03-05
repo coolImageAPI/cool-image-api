@@ -6,7 +6,7 @@ const api = new CoolImageApi();
 # Meme 
 ```js
 api.meme().then(meme => message.channel.send(new (Discord.MessageAttachment)(meme, "meme.png"));
-``
+```
 # Random Captcha 
 ```js
 api.randomcaptcha().then(data => message.channel.send(new (Discord.MessageAttachment)(data.image, "captcha.png"));
