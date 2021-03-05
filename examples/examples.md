@@ -15,6 +15,6 @@ api.randomcaptcha().then(data => message.channel.send(new (Discord.MessageAttach
 ```js
 const user = message.author.displayAvatarURL({ format: "png" });
 const user2 = message.mentions.users.first();
-api.ship({ user, user2 }).then(buffer => message.channel.send(new (Discord.MessageAttachment)(buffer, "ship.png"));
+api.ship({ user, user2 }).then(buffer => message.channel.send(new (Discord.MessageAttachment)(buffer, "ship.png")));
 ```
-*More coming soon*
+*More examples coming soon*
