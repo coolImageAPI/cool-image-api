@@ -3,9 +3,11 @@ const baseUrl = "https://api.cool-img-api.ml/";
 class CoolImageAPI {
     constructor() {
         const endpoints = getEndpoints();
+        const methods = [];
         const obj = {};
         for (const endpoint of endpoints) {
             const x = endpoint.replace('/', '').replace('-', '');
+            methods.push(x);
             obj[x] = function(params = {}) {
                 params = paramsFromObj(params);
                 const url = baseUrl + endpoint.slice(1) + params;
@@ -24,6 +26,8 @@ class CoolImageAPI {
                 return promise;
             }
         }
+        obj.endpoints = endpoints;
+        obj.methods = methods;
         Object.assign(this, obj);
     }
 }
